@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SQL Interview Gym</title>
+    <meta name="description" content="Browser-only SQL practice for a 40-minute analyst interview. Synthetic payments data, graded in SQLite, no backend." />
+    <link rel="icon" href="./favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header id="topbar"></header>
+      <div id="gate"></div>
+      <div id="workspace" class="workspace" hidden>
+        <aside id="nav">
+          <div id="nav-controls"></div>
+          <div id="nav-list"></div>
+        </aside>
+        <main id="main">
+          <div id="prompt"></div>
+          <div id="editor-host"></div>
+          <div id="actions"></div>
+          <div id="results"></div>
+        </main>
+        <aside id="schema"></aside>
+      </div>
+    </div>
+    <noscript>This gym needs JavaScript. SQL runs in your browser with SQLite.</noscript>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
